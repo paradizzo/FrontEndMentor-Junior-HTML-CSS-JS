@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+.header-mobile {
+    padding: 3ch;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 2ch;
+    align-self: center;
+}
+.text-box {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    background:url(images/image-intro-mobile.jpg), url(images/bg-pattern-intro-left-mobile.svg),url(images/bg-pattern-intro-right-mobile.svg) ,linear-gradient(180deg, hsla(256, 25%, 20%, 0.918) 90%, white 50%);
+    padding:60ch 3ch 5ch 3ch;
+    background-repeat: no-repeat;
+    background-position: top, center left, bottom right;
+    background-size: 100% 45%, auto,auto, auto;
+}
+.title {
+    font-weight: 400;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 1ch;
+}
+.sub-title {
+    line-height: 2.5ch;
+    margin-bottom: 5ch;
+}
+.text-box a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    padding: 1ch 2ch 1ch 2ch;
+    border: 2px solid  hsl(0, 0%, 98%);
+    letter-spacing: 2px;
+}
+.button-box {
+    padding-bottom: 10ch;
+    border-bottom: 2px solid hsla(270, 9%, 17%, 0.342);
+}
+.middle-section {
+    text-align: center;
+    padding: 1ch 3ch 3ch 3ch; 
+}
+.middle-section ul {
+    list-style: none;
+    margin-top: 5ch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.middle-items {
+    width: 40ch;
+    margin-bottom: 4ch;
+    line-height: 2.5ch;
+    color: hsl(270, 9%, 17%);
+}
+.middle-title {
+    margin: 2ch 0ch 2ch 0ch;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+.banner-section {
+    padding: 7ch 5ch 7ch 5ch;
+    background: url(images/bg-pattern-how-we-work-mobile.svg), hsl(256, 26%, 20%);
+    text-align: center;
+    background-position: top right;
+    color: hsl(0, 0%, 98%);
+    background-repeat: no-repeat;
+    margin-bottom: 10ch;
+}
+.banner-section h1 {
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 4ch;
+}
+.banner-section a {
+    padding: 1ch 2ch 1ch 2ch;
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    border: 2px solid hsl(0, 0%, 98%);
+    text-transform: capitalize;
+}
+.footer {
+    background: url(images/bg-pattern-footer-mobile.svg), hsl(0, 0%, 98%);
+    background-position: left top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5ch;
+}
+.logo-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid hsla(276, 4%, 51%, 0.493);
+    padding: 0ch 2ch 0ch 2ch;
+}
+.logo-footer {
+    height: 2ch;
+    align-self: center;
+}
+.logo-box ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 2ch;
+}
+.social-media-logo {
+    margin: 0ch 1ch 0ch 1ch;
+}
+.wraper-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2ch;
+}
+.faq-items {
+    width: 20ch;
+}
+.faq-title {
+    margin: 2ch 0ch 1ch 0ch;
+}
+.faq-items ul {
+    list-style: none;
+}
+.faq-items ul li {
+    padding: .5ch;
+}
+.faq-links {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-weight: 700;
+}
+.desktop-items-box, .menu-section {
+    display: none;
+}
+.menu-section.open {
+    display: block;
+    position: absolute;
+    background: url(images/bg-pattern-mobile-nav.svg), hsl(270, 9%, 17%);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 10%;
+    text-align: center;
+    padding: 20% 20% 60% 20%;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.mobile-items-box {
+    list-style: none;
+}
+.mobile-items-box li {
+    padding: 2% 2% 15% 2%;
+}
+.mobile-items a {
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.mobile-items:last-child a {
+    border: 2px solid hsl(0, 0%, 98%);
+    padding: 1ch 25% 1ch 25%;
+}
+/*active frames*/
+.button-box a:hover, .banner-section a:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+}
+.desktop-items:last-child a:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+.desktop-items a:hover {
+    color: hsl(270, 9%, 17%);
+}
+.faq-items ul li a:hover{
+    text-decoration: underline;
+}
+@media only screen and (min-width: 500px) {
+    .logo-box {
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width:870px) {
+    .wraper-box {
+        justify-content: flex-start;
+    }
+    #menu-btn {
+        display: none;
+    }
+    .desktop-items-box {
+        display: flex;
+        list-style: none;
+    }
+    .desktop-items {
+        padding: 0ch 1.5ch 0ch 1.5ch;
+    }
+    .desktop-items a {
+        text-decoration: none;
+        color:hsla(276, 4%, 51%, 0.774);
+        font-weight: 700;
+    }
+    .view-plans-button:last-child {
+        padding: 1ch 2ch 1ch 2ch;
+        border: 2px solid hsla(276, 4%, 51%, 0.774);
+        color: black;
+    }
+    .text-box {
+        background: url(images/bg-pattern-intro-right-desktop.svg),url(images/bg-pattern-intro-left-desktop.svg),url(images/image-intro-desktop.jpg),linear-gradient(180deg, hsla(256, 25%, 20%, 0.918) 90%, white 50%);
+        background-repeat: no-repeat;
+        background-position: top right, bottom left, 85% 95%;
+        text-align: left;
+        padding:10% 10% 20% 10%;
+        background-size: 20% , 10%, 35%, 100%;
+    }
+    .title, .sub-title {
+        width: 40%;
+        font-size: 1.1em;
+    }
+    .title {
+        font-size: 3vw;
+    }
+    .button-box {
+        border: none;
+    }
+    .header-mobile {
+        padding: 2% 10% 2% 10%;
+    }
+    .button-box a {
+        font-size: 1vw;
+    }
+    .middle-title {
+        font-size: 3vw;
+    }
+    .middle-items .middle-title {
+        font-size: 2vw;
+    }
+    .middle-sub-title {
+        font-size: 1.2em;
+    }
+    .banner-section {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        background: url(images/bg-pattern-how-we-work-desktop.svg), hsl(256, 26%, 20%);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 70%;
+    }
+    .banner-section h1 {
+        margin: 0ch;
+        width: 50%;
+        font-size: 2.5em;
+        text-align: left;
+    }
+    .banner-button {
+        width: 20%;
+        height: 25%;
+        align-self: center;
+        font-size: 110%;
+        letter-spacing: 2px;
+    }
+    .faq-items {
+        margin-right: 10%;
+    }
+    .footer {
+        background: url(images/bg-pattern-footer-desktop.svg), hsl(0, 0%, 98%);
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+    .menu-section.open {
+        display: none;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .middle-section {
+        text-align: left;
+        padding: 2% 10% 2% 10%;
+    }
+    .middle-items {
+        width: 33%;
+        padding: 1% 1% 1% 0;
+    }
+    .middle-section ul {
+        justify-content: flex-start;
+    }
+    .banner-text {
+        margin: 0;
+    }
+}
+
+
+/* Burguer btn */
+.menu-btn {
+    justify-content: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border:  2px solid black;
+}
+.menu-btn-burguer {
+    width: 20px;
+    height: 2px;
+    background: black;
+    border: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burguer::before,
+.menu-btn-burguer::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burguer::before {
+    transform: translateY(-6px);
+}
+.menu-btn-burguer::after {
+    transform: translateY(6px);
+}
+.menu-btn.open .menu-btn-burguer{
+    transform: translateX(-50px);
+    background: transparent;
+}
+.menu-btn.open .menu-btn-burguer::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn-burguer::after {
+    transform: rotate(-45deg)  translate(35px, 35px);
+}
